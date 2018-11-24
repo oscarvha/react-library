@@ -1,0 +1,4 @@
+
+@function fz($key: default, $map: rem) {
+  @return map-get(map-get($font-size, $map), $key);
+}

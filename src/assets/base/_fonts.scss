@@ -1,0 +1,23 @@
+$font-title: 'Allerta Stencil', sans-serif;
+
+$font-size: (
+        px: (
+                hide  : 0,
+                xs    : 12px,
+                sm    : 14px,
+                def   : 16px,
+                md    : 21px,
+                lg    : 28px,
+                xl    : 42px,
+        ),
+        rem: (
+                hide  : 0,
+                xs    : .7rem,
+                sm    : .85rem,
+                def   : 1rem,
+                md    : 1.5rem,
+                lg    : 2rem,
+                xl    : 4rem,
+                xxl   : 6rem
+        ),
+) !default;

@@ -1,0 +1,33 @@
+.heroview__wrapper{
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.heroview__content{
+  width: 100%;
+}
+
+@include mq-sm-min{
+  .heroview__content{
+    position: relative;
+    width: 50%;
+    left: 10vw;
+  }
+}
+
+.heroview__wrapper{
+  color: white;
+}
+
+.heroview__item-title{
+  font-size: fz(xxl);
+  font-family: $font-title;
+}
+
+.heroview__item-subtitle{
+  font-size: fz(lg);
+}
