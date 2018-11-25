@@ -1,14 +1,20 @@
 .heroview__wrapper{
   width: 100%;
   position: relative;
-  background-size: cover;
   min-height: 600px;
   display: flex;
   align-items: center;
+  background-blend-mode: hard-light;
+  background-size: cover;
+
 }
 
 .heroview__content{
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @include mq-sm-min{
@@ -24,10 +30,21 @@
 }
 
 .heroview__item-title{
-  font-size: fz(xxl);
+  font-size: fz(xl);
   font-family: $font-title;
 }
 
 .heroview__item-subtitle{
   font-size: fz(lg);
+}
+
+.heroview__data{
+  background-color: rgba(0, 4, 0, 0.6);
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.heroview__item-type{
+  display: flex;
+  line-height: 1;
 }

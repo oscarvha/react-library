@@ -1,16 +1,17 @@
-
+import {getRandomResourceByType, getResourceByIdAndType, getResourceByTypeAndId} from "../firebease/resource";
 
 class GeneralResourceService {
 
-  static getResource()
-  {
+  static getResource() {
     return new Promise((resolve, reject) => {
-      let data = {
-        name: 'Narcos',
-        type: 'Juegos',
-        score: 77
-      };
-      resolve(data);
+      resolve(getRandomResourceByType('games'));
+    });
+  }
+
+  static getRandomResourceByType(resourceType) {
+
+    return new Promise(resolve => {
+      resolve(getRandomResourceByType(resourceType))
     });
   }
 

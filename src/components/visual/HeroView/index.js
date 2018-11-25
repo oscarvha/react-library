@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import {IoLogoGameControllerB} from "react-icons/io";
+
 
 const proptypes = {
   name: PropTypes.string,
@@ -21,19 +23,25 @@ const HeroView = ({ name, description, type, image_cover, score }) => (
 
   <div
     className={`heroview__wrapper`}
-    style={{ backgroundImage: `url(${image_cover})` }}
+    style={{  background:`radial-gradient(circle, transparent 40%, black 80%),
+    linear-gradient(to right, rgba(0, 4, 0, 0.6), gray), url(${image_cover})`,
+      backgroundSize: `background-size: cover`
+    }}
   >
     <div className={`heroview__content`}>
-      <h2 className={`heroview__item-title`}>{name}</h2>
-      <h3 className={`heroview__item-subtitle`}>Tipo de recurso {type}</h3>
-      <p>{score}</p>
-      <div className={'hero-view__button-wrapper'}>
+      <div className={`heroview__data`}>
+        <span className={`heroview__item-type`}>
+          <IoLogoGameControllerB className={`icon`}/>{type}</span>
+        <h2 className={`heroview__item-title`}>{name}</h2>
+        <p>{score}</p>
+        <div className={'hero-view__button-wrapper'}>
+      </div>
 
       </div>
     </div>
   </div>
 );
 
-HeroView.PropTypes = proptypes;
+HeroView.propTypes = proptypes;
 HeroView.defaultProps = defaultProps;
 export default HeroView;
