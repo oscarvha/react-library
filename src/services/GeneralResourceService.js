@@ -1,4 +1,10 @@
-import {getRandomResourceByType, getResourceByIdAndType, getResourceByTypeAndId} from "../firebease/resource";
+import {
+  getLastResources,
+  getRandomResourceByType,
+  getResourceByIdAndType,
+  getResourcesByType
+} from "../firebease/resource";
+
 
 class GeneralResourceService {
 
@@ -15,6 +21,23 @@ class GeneralResourceService {
     });
   }
 
+  static getResourceByIdAndType(resourceType, resourceId) {
+    return new Promise(resolve => {
+      resolve(getResourceByIdAndType(resourceType, resourceId))
+    });
+  }
+
+  static getResourcesByType(type, order, typeOrder, limit){
+    return new Promise(resolve => {
+      resolve(getResourcesByType(type , order, typeOrder, limit))
+    })
+  }
+
+  static getLastResources($typeOrder, limit) {
+    return new Promise(resolve => {
+      resolve(getLastResources($typeOrder, limit));
+    })
+  }
 
 }
 

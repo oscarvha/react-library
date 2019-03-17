@@ -1,0 +1,11 @@
+.app-title{
+  font-size: fz(lgx);
+  font-family: $font-title;
+}
+
+.app-title--full-background{
+  width: 100%;
+  background: $dark-color--opacity;
+  text-align: center;
+}
+

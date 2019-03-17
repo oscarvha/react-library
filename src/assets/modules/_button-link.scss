@@ -1,0 +1,24 @@
+
+.button-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: space(def);
+  text-decoration: none;
+  border-radius: 44px;
+  border: 2px solid #e50914;
+  height: 44px;
+  color: white;
+  font-size: fz(sm);
+  transition: background .25s linear, color .1s linear;
+}
+
+.button-link:hover,
+.button-link:focus,
+.button-link:active{
+  background-color: #e50914;
+}
+
+.button-link--inverse{
+  background-color: $primary-color;
+}

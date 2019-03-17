@@ -7,7 +7,6 @@
 @import "base/reset";
 @import "base/fonts";
 @import "base/icons";
-
 // ----------------------------------------------------------------------
 // Functions
 // ----------------------------------------------------------------------
@@ -23,9 +22,16 @@
 @import "modules/header";
 @import "modules/footer";
 @import "modules/button-hero";
-
+@import "modules/button-link";
+@import "modules/last-resources";
+@import "modules/titles";
+@import "modules/slider-resources";
 
 // ----------------------------------------------------------------------
 	// Views
 // ----------------------------------------------------------------------
 @import "views/blue";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~bootstrap/dist/css/bootstrap-grid.css";

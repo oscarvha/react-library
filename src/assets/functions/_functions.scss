@@ -2,3 +2,7 @@
 @function fz($key: default, $map: rem) {
   @return map-get(map-get($font-size, $map), $key);
 }
+
+@function space($key: default) {
+  @return map-get($spacing, $key);
+}
